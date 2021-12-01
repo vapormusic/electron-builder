@@ -13,7 +13,7 @@ importers:
       catharsis: 0.9.0
       conventional-changelog-cli: 2.1.1
       dmd: 6.0.0
-      dmg-license: 1.0.9
+      dmg-license: 1.0.10
       eslint: 7.30.0
       eslint-config-prettier: 8.3.0
       eslint-plugin-prettier: 3.4.0
@@ -33,7 +33,7 @@ importers:
       typescript-json-schema: 0.51.0
       v8-compile-cache: 2.3.0
     dependencies:
-      dmg-license: 1.0.9
+      dmg-license: 1.0.10
     devDependencies:
       '@babel/plugin-transform-modules-commonjs': 7.15.4
       '@changesets/changelog-github': 0.4.1
@@ -3291,7 +3291,6 @@ packages:
   /astral-regex/2.0.0:
     resolution: {integrity: sha512-Z7tMw1ytTXt5jqMcOP+OQteU1VuNK9Y02uuJtKQ1Sv69jXQKKg5cibLwGJow8yzZP+eAc18EmLGPal0bp36rvQ==}
     engines: {node: '>=8'}
-    dev: true
 
   /async-exit-hook/2.0.1:
     resolution: {integrity: sha512-NW2cX8m1Q7KPA7a5M2ULQeZ2wR5qI5PAbw5L0UOMxdioVk9PMZ0h1TmyZEkPYrCvYjDlFICusOu1dlEKAAeXBw==}
@@ -3852,6 +3851,7 @@ packages:
       slice-ansi: 1.0.0
       string-width: 2.1.1
     dev: false
+    optional: true
 
   /cli-truncate/2.1.0:
     resolution: {integrity: sha512-n8fOixwDD6b/ObinzTrp1ZKFzbgvKZvuz/TvejnLn1aQfC6r52XEx85FmuC+3HI+JM7coBRXUvNqEU2PHVrHpg==}
@@ -3859,7 +3859,6 @@ packages:
     dependencies:
       slice-ansi: 3.0.0
       string-width: 4.2.3
-    dev: true
 
   /cliui/6.0.0:
     resolution: {integrity: sha512-t6wbgtoCXvAzst7QgXxJYqPt0usEfbgQdftEPbLL/cvv6HPE5VgvqCuAIDR0NgU52ds6rFwqrgakNLrHEjCbrQ==}
@@ -5065,11 +5064,28 @@ packages:
       walk-back: 5.1.0
     dev: true
 
+  /dmg-license/1.0.10:
+    resolution: {integrity: sha512-SVeeyiOeinV5JCPHXMdKOgK1YVbak/4+8WL2rBnfqRYpA5FaeFaQnQWb25x628am1w70CbipGDv9S51biph63A==}
+    engines: {node: '>=8'}
+    os: [darwin]
+    hasBin: true
+    dependencies:
+      '@types/plist': 3.0.2
+      '@types/verror': 1.10.5
+      ajv: 6.12.6
+      crc: 3.8.0
+      iconv-corefoundation: 1.1.7
+      plist: 3.0.4
+      smart-buffer: 4.2.0
+      verror: 1.10.1
+    dev: false
+
   /dmg-license/1.0.9:
     resolution: {integrity: sha512-Rq6qMDaDou2+aPN2SYy0x7LDznoJ/XaG6oDcH5wXUp+WRWQMUYE6eM+F+nex+/LSXOp1uw4HLFoed0YbfU8R/Q==}
     engines: {node: '>=8'}
     os: [darwin]
     hasBin: true
+    requiresBuild: true
     dependencies:
       '@types/plist': 3.0.2
       '@types/verror': 1.10.5
@@ -5081,6 +5097,7 @@ packages:
       smart-buffer: 4.2.0
       verror: 1.10.1
     dev: false
+    optional: true
 
   /doctrine/3.0.0:
     resolution: {integrity: sha512-yS+Q5i3hBf7GBkd4KG8a7eBNNWNGLTaEwwYWUijIYM7zrlYDM0BFXHjjPWlWZ1Rg7UaddZeIDmi9jF3HmqiQ2w==}
@@ -6078,6 +6095,16 @@ packages:
     requiresBuild: true
     dependencies:
       cli-truncate: 1.1.0
+      node-addon-api: 1.7.2
+    dev: false
+    optional: true
+
+  /iconv-corefoundation/1.1.7:
+    resolution: {integrity: sha512-T10qvkw0zz4wnm560lOEg0PovVqUXuOFhhHAkixw8/sycy7TJt7v/RrkEKEQnAw2viPSJu6iAkErxnzR0g8PpQ==}
+    engines: {node: ^8.11.2 || >=10}
+    os: [darwin]
+    dependencies:
+      cli-truncate: 2.1.0
       node-addon-api: 1.7.2
     dev: false
 
@@ -8984,6 +9011,7 @@ packages:
     dependencies:
       is-fullwidth-code-point: 2.0.0
     dev: false
+    optional: true
 
   /slice-ansi/3.0.0:
     resolution: {integrity: sha512-pSyv7bSTC7ig9Dcgbw9AuRNUb5k5V6oDudjZoMBSr13qpLBG7tB+zgCkARjq7xIUgdz5P1Qe8u+rSGdouOOIyQ==}
@@ -8992,7 +9020,6 @@ packages:
       ansi-styles: 4.3.0
       astral-regex: 2.0.0
       is-fullwidth-code-point: 3.0.0
-    dev: true
 
   /slice-ansi/4.0.0:
     resolution: {integrity: sha512-qMCMfhY040cVHT43K9BFygqYbUPFZKHOg7K73mtTWJRb8pyP3fzf4Ixd5SzdEJQ6MRUg/WBnOLxghZtKKurENQ==}

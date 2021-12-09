@@ -130,6 +130,20 @@ export default class MacPackager extends PlatformPackager<MacConfiguration> {
         })
         await fs.rm(x64AppOutDir, { recursive: true, force: true })
         await fs.rm(arm64AppOutPath, { recursive: true, force: true })
+
+        const packContext: AfterPackContext = {
+          appOutDir,
+          outDir,
+          arch,
+          targets,
+          packager: this,
+          electronPlatformName: platformName,
+        }
+        await this.info.afterPack(packContext)
+        if (framework.afterPack != null) {
+          await framework.afterPack(packContext)
+        }
+
         await this.doSignAfterPack(outDir, appOutDir, platformName, arch, platformSpecificBuildOptions, targets)
         break
       }

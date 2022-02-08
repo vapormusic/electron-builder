@@ -1,5 +1,95 @@
 # app-builder-lib
 
+## 23.0.0-alpha.3
+
+### Patch Changes
+
+- [#6598](https://github.com/electron-userland/electron-builder/pull/6598) [`70c35176`](https://github.com/electron-userland/electron-builder/commit/70c35176e452ee3159196edabaf685337a09cb82) Thanks [@baparham](https://github.com/baparham)! - chore(app-builder-lib): update electron-osx-sign from 0.5.0 to 0.6.0
+
+## 23.0.0-alpha.2
+
+### Minor Changes
+
+- [#6578](https://github.com/electron-userland/electron-builder/pull/6578) [`81132a85`](https://github.com/electron-userland/electron-builder/commit/81132a857b24bfdb01fc44eba75fc89fa2885545) Thanks [@indutny-signal](https://github.com/indutny-signal)! - feat: use `mergeASARs` API by @electron/universal
+
+## 23.0.0-alpha.1
+
+### Patch Changes
+
+- Updated dependencies [[`39da9edd`](https://github.com/electron-userland/electron-builder/commit/39da9edd2df5c147ef2d868f022484a8b2e0466a)]:
+  - electron-publish@23.0.0-alpha.1
+
+## 23.0.0-alpha.0
+
+### Major Changes
+
+- [#6556](https://github.com/electron-userland/electron-builder/pull/6556) [`a138a86f`](https://github.com/electron-userland/electron-builder/commit/a138a86fb7b59098f5dac0c0a6b59c034eb9b222) Thanks [@mmaietta](https://github.com/mmaietta)! - Breaking changes
+  Removing Bintray support since it was sunset. Ref: https://jfrog.com/blog/into-the-sunset-bintray-jcenter-gocenter-and-chartcenter/
+  Fail-fast for windows signature verification failures. Adding `-LiteralPath` to update file path to disregard injected wildcards
+  Force strip path separators for backslashes on Windows during update process
+  Force authentication for local mac squirrel update server
+
+  Fixes:
+  fix(nsis): Adding --INPUTCHARSET to makensis. (#4898 #6232 #6259)
+
+  Adding additional details to error console logging
+
+* [#6556](https://github.com/electron-userland/electron-builder/pull/6556) [`a138a86f`](https://github.com/electron-userland/electron-builder/commit/a138a86fb7b59098f5dac0c0a6b59c034eb9b222) Thanks [@mmaietta](https://github.com/mmaietta)! - BREAKING CHANGE: remove MSI option `iconId`
+
+### Minor Changes
+
+- [#6556](https://github.com/electron-userland/electron-builder/pull/6556) [`a138a86f`](https://github.com/electron-userland/electron-builder/commit/a138a86fb7b59098f5dac0c0a6b59c034eb9b222) Thanks [@mmaietta](https://github.com/mmaietta)! - feat(msi): support assisted installer for MSI target
+
+* [#6556](https://github.com/electron-userland/electron-builder/pull/6556) [`a138a86f`](https://github.com/electron-userland/electron-builder/commit/a138a86fb7b59098f5dac0c0a6b59c034eb9b222) Thanks [@mmaietta](https://github.com/mmaietta)! - feat(msi): add fileAssociation support for MSI target
+
+- [#6556](https://github.com/electron-userland/electron-builder/pull/6556) [`a138a86f`](https://github.com/electron-userland/electron-builder/commit/a138a86fb7b59098f5dac0c0a6b59c034eb9b222) Thanks [@mmaietta](https://github.com/mmaietta)! - feat(mac): ElectronAsarIntegrity in electron@15
+
+* [#6556](https://github.com/electron-userland/electron-builder/pull/6556) [`a138a86f`](https://github.com/electron-userland/electron-builder/commit/a138a86fb7b59098f5dac0c0a6b59c034eb9b222) Thanks [@mmaietta](https://github.com/mmaietta)! - Default to LZO compression for snap packages.
+  This greatly improves cold startup performance (https://snapcraft.io/blog/why-lzo-was-chosen-as-the-new-compression-method).
+  LZO has already been adopted by most desktop-oriented snaps outside of the Electron realm.
+
+  For the rare case where developers prefer a smaller file size (XZ) to vastly improved decompression performance (LZO), provided an option to override the default compression method.
+
+  Consumers do not need to update their configuration unless they specifically want to stick to XZ compression.
+
+### Patch Changes
+
+- [#6551](https://github.com/electron-userland/electron-builder/pull/6551) [`7b2a5e1f`](https://github.com/electron-userland/electron-builder/commit/7b2a5e1f19921e9da4aaaea8c01c78740f29f9dd) Thanks [@indutny-signal](https://github.com/indutny-signal)! - fix(nsis): use revertible rmdir on update
+
+* [#6556](https://github.com/electron-userland/electron-builder/pull/6556) [`a138a86f`](https://github.com/electron-userland/electron-builder/commit/a138a86fb7b59098f5dac0c0a6b59c034eb9b222) Thanks [@mmaietta](https://github.com/mmaietta)! - fix(win): iconId sometimes containing invalid characters, and iconId config option being ignored.
+  fix(msi): change the fallback value for generated MSI Ids to a unique string for the product.
+
+- [#6556](https://github.com/electron-userland/electron-builder/pull/6556) [`a138a86f`](https://github.com/electron-userland/electron-builder/commit/a138a86fb7b59098f5dac0c0a6b59c034eb9b222) Thanks [@mmaietta](https://github.com/mmaietta)! - fix(msi): MSI fails to install when deployed machine-wide via GPO
+
+* [#6547](https://github.com/electron-userland/electron-builder/pull/6547) [`bea51d6a`](https://github.com/electron-userland/electron-builder/commit/bea51d6a8bb828d9b34734908f13b667aa55b0e9) Thanks [@indutny-signal](https://github.com/indutny-signal)! - fix(nsis): Prevent partial updates from happening
+
+* Updated dependencies [[`a138a86f`](https://github.com/electron-userland/electron-builder/commit/a138a86fb7b59098f5dac0c0a6b59c034eb9b222), [`a138a86f`](https://github.com/electron-userland/electron-builder/commit/a138a86fb7b59098f5dac0c0a6b59c034eb9b222)]:
+  - builder-util@23.0.0-alpha.0
+  - builder-util-runtime@9.0.0-alpha.0
+  - electron-publish@23.0.0-alpha.0
+
+## 22.14.13
+
+### Patch Changes
+
+- Updated dependencies [[`f7b38698`](https://github.com/electron-userland/electron-builder/commit/f7b386986ec30f7e4cd3e3f68e078a773940a51c)]:
+  - builder-util@22.14.13
+  - electron-publish@22.14.13
+
+## 22.14.12
+
+### Patch Changes
+
+- Updated dependencies [[`344bb232`](https://github.com/electron-userland/electron-builder/commit/344bb232d71e608b881a04fc98dca0858e42ddfc)]:
+  - electron-publish@22.14.12
+
+## 22.14.11
+
+### Patch Changes
+
+- [#6472](https://github.com/electron-userland/electron-builder/pull/6472) [`e3d06afa`](https://github.com/electron-userland/electron-builder/commit/e3d06afae1236d44e4b6e670b453b260b1f74d84) Thanks [@I-Otsuki](https://github.com/I-Otsuki)! - fix(nsis): Ignore other users processes when installing for only current user
+  Closes #6104
+
 ## 22.14.10
 
 ### Patch Changes

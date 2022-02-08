@@ -1,5 +1,45 @@
 # electron-publish
 
+## 23.0.0-alpha.1
+
+### Patch Changes
+
+- [#6563](https://github.com/electron-userland/electron-builder/pull/6563) [`39da9edd`](https://github.com/electron-userland/electron-builder/commit/39da9edd2df5c147ef2d868f022484a8b2e0466a) Thanks [@baparham](https://github.com/baparham)! - fix(electron-publish): handle plain text description from github api HTTP_ERROR_422 to resolve socket hang ups
+
+## 23.0.0-alpha.0
+
+### Major Changes
+
+- [#6556](https://github.com/electron-userland/electron-builder/pull/6556) [`a138a86f`](https://github.com/electron-userland/electron-builder/commit/a138a86fb7b59098f5dac0c0a6b59c034eb9b222) Thanks [@mmaietta](https://github.com/mmaietta)! - Breaking changes
+  Removing Bintray support since it was sunset. Ref: https://jfrog.com/blog/into-the-sunset-bintray-jcenter-gocenter-and-chartcenter/
+  Fail-fast for windows signature verification failures. Adding `-LiteralPath` to update file path to disregard injected wildcards
+  Force strip path separators for backslashes on Windows during update process
+  Force authentication for local mac squirrel update server
+
+  Fixes:
+  fix(nsis): Adding --INPUTCHARSET to makensis. (#4898 #6232 #6259)
+
+  Adding additional details to error console logging
+
+### Patch Changes
+
+- Updated dependencies [[`a138a86f`](https://github.com/electron-userland/electron-builder/commit/a138a86fb7b59098f5dac0c0a6b59c034eb9b222), [`a138a86f`](https://github.com/electron-userland/electron-builder/commit/a138a86fb7b59098f5dac0c0a6b59c034eb9b222)]:
+  - builder-util@23.0.0-alpha.0
+  - builder-util-runtime@9.0.0-alpha.0
+
+## 22.14.13
+
+### Patch Changes
+
+- Updated dependencies [[`f7b38698`](https://github.com/electron-userland/electron-builder/commit/f7b386986ec30f7e4cd3e3f68e078a773940a51c)]:
+  - builder-util@22.14.13
+
+## 22.14.12
+
+### Patch Changes
+
+- [#6516](https://github.com/electron-userland/electron-builder/pull/6516) [`344bb232`](https://github.com/electron-userland/electron-builder/commit/344bb232d71e608b881a04fc98dca0858e42ddfc) Thanks [@robertpatrick](https://github.com/robertpatrick)! - fix: Explicitly set the protocol to https on the request objects to allow publishing to work from behind a proxy server when the https_proxy environment variable is set.
+
 ## 22.14.7
 
 ### Patch Changes

@@ -1,5 +1,54 @@
 # electron-forge-maker-nsis-web
 
+## 23.0.0-alpha.3
+
+### Patch Changes
+
+- Updated dependencies [[`70c35176`](https://github.com/electron-userland/electron-builder/commit/70c35176e452ee3159196edabaf685337a09cb82)]:
+  - app-builder-lib@23.0.0-alpha.3
+
+## 23.0.0-alpha.2
+
+### Patch Changes
+
+- Updated dependencies [[`81132a85`](https://github.com/electron-userland/electron-builder/commit/81132a857b24bfdb01fc44eba75fc89fa2885545)]:
+  - app-builder-lib@23.0.0-alpha.2
+
+## 23.0.0-alpha.1
+
+### Patch Changes
+
+- Updated dependencies []:
+  - app-builder-lib@23.0.0-alpha.1
+
+## 23.0.0-alpha.0
+
+### Patch Changes
+
+- Updated dependencies [[`7b2a5e1f`](https://github.com/electron-userland/electron-builder/commit/7b2a5e1f19921e9da4aaaea8c01c78740f29f9dd), [`a138a86f`](https://github.com/electron-userland/electron-builder/commit/a138a86fb7b59098f5dac0c0a6b59c034eb9b222), [`a138a86f`](https://github.com/electron-userland/electron-builder/commit/a138a86fb7b59098f5dac0c0a6b59c034eb9b222), [`a138a86f`](https://github.com/electron-userland/electron-builder/commit/a138a86fb7b59098f5dac0c0a6b59c034eb9b222), [`a138a86f`](https://github.com/electron-userland/electron-builder/commit/a138a86fb7b59098f5dac0c0a6b59c034eb9b222), [`a138a86f`](https://github.com/electron-userland/electron-builder/commit/a138a86fb7b59098f5dac0c0a6b59c034eb9b222), [`bea51d6a`](https://github.com/electron-userland/electron-builder/commit/bea51d6a8bb828d9b34734908f13b667aa55b0e9), [`a138a86f`](https://github.com/electron-userland/electron-builder/commit/a138a86fb7b59098f5dac0c0a6b59c034eb9b222), [`a138a86f`](https://github.com/electron-userland/electron-builder/commit/a138a86fb7b59098f5dac0c0a6b59c034eb9b222), [`a138a86f`](https://github.com/electron-userland/electron-builder/commit/a138a86fb7b59098f5dac0c0a6b59c034eb9b222)]:
+  - app-builder-lib@23.0.0-alpha.0
+
+## 22.14.13
+
+### Patch Changes
+
+- Updated dependencies []:
+  - app-builder-lib@22.14.13
+
+## 22.14.12
+
+### Patch Changes
+
+- Updated dependencies []:
+  - app-builder-lib@22.14.12
+
+## 22.14.11
+
+### Patch Changes
+
+- Updated dependencies [[`e3d06afa`](https://github.com/electron-userland/electron-builder/commit/e3d06afae1236d44e4b6e670b453b260b1f74d84)]:
+  - app-builder-lib@22.14.11
+
 ## 22.14.10
 
 ### Patch Changes
